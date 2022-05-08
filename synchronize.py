@@ -20,7 +20,8 @@ def check_int(value):
 
 def configure_logger():
     """
-    Configures internal logger to output the messages to the console and to the file (bullet 3)
+    Configures internal logger to output the messages to the console and to the file (bullet 3) Added noinspection
+    PyArgumentList as a fix because the keyword basicConfig is not recognized in Python 3 (tested in Pycharm)
     """
     # noinspection PyArgumentList
     logging.basicConfig(
